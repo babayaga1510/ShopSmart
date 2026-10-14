@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ShopSmart — smart finds for everyday living.">
+  <title>ShopSmart | Smart finds. Better living.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#">ShopSmart<span>.</span></a>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+    </nav>
+    <button id="cartButton" class="cart">
+      Cart (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">YOUR EVERYDAY DISCOVERY STORE</p>
+      <h1>Smart finds.<br><span>Better living.</span></h1>
+      <p>Discover useful essentials and everyday favorites.</p>
+      <a class="button" href="#products">Explore products →</a>
+    </section>
+
+    <section id="products" class="section">
+      <p class="eyebrow">HAND-PICKED FOR YOU</p>
+      <h2>Featured products</h2>
+
+      <div class="grid">
+        <article class="card">
+          <div class="product-art art-one">🎧</div>
+          <p class="category">TECH</p>
+          <h3>Everyday Headphones</h3>
+          <p class="price">₹2,499</p>
+          <button class="add" data-name="Everyday Headphones">
+            Add to cart +
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="product-art art-two">☕</div>
+          <p class="category">HOME</p>
+          <h3>Slow Morning Mug</h3>
+          <p class="price">₹699</p>
+          <button class="add" data-name="Slow Morning Mug">
+            Add to cart +
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="product-art art-three">🧴</div>
+          <p class="category">LIFESTYLE</p>
+          <h3>Everyday Bottle</h3>
+          <p class="price">₹899</p>
+          <button class="add" data-name="Everyday Bottle">
+            Add to cart +
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="product-art art-four">🔊</div>
+          <p class="category">TECH</p>
+          <h3>Mini Bluetooth Speaker</h3>
+          <p class="price">₹1,499</p>
+          <button class="add" data-name="Mini Bluetooth Speaker">
+            Add to cart +
+          </button>
+        </article>
+      </div>
+      <p class="note">Sample products and prices for demonstration only.</p>
+    </section>
+
+    <section id="about" class="about">
+      <p class="eyebrow">THE SHOPSMART WAY</p>
+      <h2>Good choices.<br>Less scrolling.</h2>
+      <p>A simple, friendly shopping experience for your everyday needs.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">ShopSmart<span>.</span></a>
+    <p>Smart finds. Better living.</p>
+    <small>© <span id="year"></span> ShopSmart</small>
+  </footer>
+
+  <div id="message" class="message" role="status" aria-live="polite"></div>
+</body>
+</html>
